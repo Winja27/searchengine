@@ -43,3 +43,4 @@ if __name__ == "__main__":
 
     graph = build_graph(link_mapping)
     nx.write_gexf(graph, 'graph.gexf')
+    # 图文件超过了50mb，超过了GitHub最大文件限制，不能上传。可以自己本地运行生成。
