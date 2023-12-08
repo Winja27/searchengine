@@ -34,11 +34,6 @@ def build_graph(link_mapping):
     return G
 
 
-def visualize_graph(G):
-    nx.draw(G, with_labels=True, font_size=8, node_size=1000, font_color='black')
-    plt.show()
-
-
 if __name__ == "__main__":
     directory_path = r"D:\搜索引擎\爬虫和网页\网页"
 
@@ -48,4 +43,3 @@ if __name__ == "__main__":
         print(f"{source} links to {', '.join(targets)}")
 
     graph = build_graph(link_mapping)
-    visualize_graph(graph)
