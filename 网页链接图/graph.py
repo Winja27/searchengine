@@ -1,7 +1,6 @@
 import os
 from bs4 import BeautifulSoup
 import networkx as nx
-import matplotlib.pyplot as plt
 
 
 def extract_links(html_path):
@@ -43,3 +42,4 @@ if __name__ == "__main__":
         print(f"{source} links to {', '.join(targets)}")
 
     graph = build_graph(link_mapping)
+    nx.write_gexf(graph, 'graph.gexf')
