@@ -31,7 +31,7 @@ def tokenize_and_save(file_path, output_dir):
     word_index = tokenizer.word_index
 
     file_name = os.path.splitext(os.path.basename(file_path))[0]
-    output_file_path = os.path.join(output_dir, f"{file_name}_word_index.txt")
+    output_file_path = os.path.join(output_dir, f"{file_name}.html.txt")
 
     with open(output_file_path, 'w', encoding='utf-8') as output_file:
         for word, index in word_index.items():
